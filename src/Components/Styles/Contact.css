@@ -81,8 +81,19 @@ button:hover {
 .success-message {
   color: black;
 }
-@media (max-width: 850px) {
-  .contact input {
-    width: 70%;
+@media (max-width: 50em) {
+  .contact input,
+  button {
+    width: 80%;
+    font-size: clamp(1.3rem, 0.3vw + 0.5rem, 2rem);
+  }
+  .form-style {
+    width: 100%;
+  }
+  .form-success h1 {
+    margin: 10%;
+  }
+  span > a {
+    font-size: clamp(1.3rem, 0.3vw + 0.5rem, 2rem);
   }
 }

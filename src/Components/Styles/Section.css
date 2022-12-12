@@ -41,8 +41,13 @@
   text-transform: uppercase;
   font-family: 'Bodoni Moda', serif;
 }
-@media (max-width: 900px) {
-  .main {
+@media (max-width: 50em) {
+  .section {
     justify-content: center;
+    padding: 12%;
+  }
+  .main-status {
+    text-justify: distribute-all-lines;
+    margin: 0 -10%;
   }
 }
