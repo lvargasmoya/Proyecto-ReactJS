@@ -24,7 +24,7 @@
   gap: 2rem;
   color: var(--clr-white);
   padding-inline: 2rem;
-  padding-block: 2rem;
+  padding-block: 10rem;
 }
 .proj-carts {
   width: 100%;
@@ -56,12 +56,14 @@
 }
 .proj-carts h3 {
   text-transform: uppercase;
-  margin-block: 28rem;
+  margin-block: 14rem;
+  font-size: clamp(3rem, 0.3vw + 0.5rem, 2rem);
+  margin-left: 70%;
 }
 .proj-carts p {
   text-transform: uppercase;
-  font-size: clamp(2rem, 0.3vw + 0.5rem, 2rem);
-  margin-block: -46rem;
+  font-size: clamp(3rem, 0.3vw + 0.5rem, 2rem);
+  margin-block: -15rem;
 }
 @media (max-width: 50em) {
   .projects {
@@ -77,6 +79,7 @@
     text-transform: uppercase;
     margin-block: -4rem;
     margin-left: 70%;
+    font-size: clamp(1rem, 0.3vw + 0.5rem, 2rem);
   }
   .proj-carts p {
     text-transform: uppercase;
