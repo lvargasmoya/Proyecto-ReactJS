@@ -31,13 +31,6 @@ export default function () {
               deserves.
             </p>
           </h1>
-
-          <div className='main-btn'>
-            <Link onClick={showModal} to='/'>
-              Programming languages I've worked.
-            </Link>
-          </div>
-          {modalActive && <Modal showModal={showModal} />}
         </div>
       </div>
     </>
