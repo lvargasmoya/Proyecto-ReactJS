@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import Header from './Components/Header';
 import Section from './Components/Section';
 import MoonLoader from 'react-spinners/MoonLoader';
 function App() {

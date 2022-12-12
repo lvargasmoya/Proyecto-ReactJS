@@ -46,8 +46,8 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    background-color: hsl(0, 2, 18, 0.263);
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     inset: 0 0 0 30%;
     transform: translateX(100%);
     transition: 500ms;
@@ -57,8 +57,8 @@
     transition: 500ms;
   }
   .list-items li a {
-    color: var(--clr-white);
-    font-size: clamp(0.1rem, 1vw + 0.5rem, 3.5rem);
+    color: #d4af37;
+    font-size: clamp(1.5rem, 1vw + 0.5rem, 3.5rem);
   }
   .close-icon {
     display: block;
