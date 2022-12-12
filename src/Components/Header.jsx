@@ -11,19 +11,20 @@ export default function Header() {
 
   return (
     <div className='header'>
-      <div className='logo'>
-        <span>Luis</span>
-      </div>
+      <div className='logo'></div>
       <nav>
         <ul className={navActive ? 'list-items active' : 'list-items'}>
           <div className='close-icon'>
             <Close className='close' onClick={openMenu} />
           </div>
           <li>
-            <Link to='/'>Habilities</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/'>Projects</Link>
+            <Link to='/qualities'>Qualities</Link>
+          </li>
+          <li>
+            <Link to='/projects'>Projects</Link>
           </li>
           <li>
             <Link to='/contact'>Contacs</Link>

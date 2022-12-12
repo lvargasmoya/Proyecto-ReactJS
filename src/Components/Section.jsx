@@ -1,6 +1,8 @@
 import { Link } from '@mui/material';
 import React, { useState } from 'react';
 import Modal from './Modal';
+import Header from './Header';
+import Quotes from './Quotes';
 import './Styles/Section.css';
 
 export default function () {
@@ -11,25 +13,33 @@ export default function () {
   };
 
   return (
-    <div className='section'>
-      <div>
-        <h1 className='main-header'>
-          My name is<span>Luis</span>
-          <p className='main-status'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            ducimus veritatis quod officiis tenetur nisi hic explicabo, corrupti
-            fuga, omnis non voluptas! Asperiores molestias ab odit neque veniam
-            quam minima!
-          </p>
-        </h1>
+    <>
+      <Header />
+      <div className='section'>
+        <div>
+          <h1 className='main-header'>
+            I'm<span>Luis</span>
+            <p className='main-status'>
+              I'm a passionate, detailed, focused and centred human being
+              intending to become one of the best website designers and
+              developers. The journey is hard and long, with variables and
+              challenges in building a website that meets the most delicate and
+              sophisticated requirements. I'm a professional embraced by the
+              darkest colour to create the shiniest results. A self-learner on
+              the one hand and a student on another, to embrace the newest
+              technologies that help construct the best project a client
+              deserves.
+            </p>
+          </h1>
 
-        <div className='main-btn'>
-          <Link onClick={showModal} to='/'>
-            see work
-          </Link>
+          <div className='main-btn'>
+            <Link onClick={showModal} to='/'>
+              Programming languages I've worked.
+            </Link>
+          </div>
+          {modalActive && <Modal showModal={showModal} />}
         </div>
-        {modalActive && <Modal showModal={showModal} />}
       </div>
-    </div>
+    </>
   );
 }

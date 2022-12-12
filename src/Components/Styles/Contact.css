@@ -1,16 +1,46 @@
-.contact {
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(31, 28, 22);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 28, 22, 1) 0%,
+    rgba(64, 61, 31, 1) 21%,
+    rgba(48, 36, 3, 1) 59%,
+    rgba(97, 76, 18, 1) 100%
+  );
   width: 100%;
   height: 100vh;
-  background: var(--clr-black);
+}
+.contact,
+.form-content {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.308)),
+    url(../../assets/6.jpeg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.contact h1 {
+.contact h1,
+.form-success h1 {
   color: hsl(var(--clr-glass));
 }
-.contact input {
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+}
+.contact input,
+button,
+span > a {
   width: 40%;
   padding: 15px;
   margin-block: 0.3rem;
@@ -18,6 +48,23 @@
   outline: none;
   background: hsl(var(--clr-glass-dark));
   color: var(--clr-white);
+}
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span > a {
+  text-decoration: none;
+  text-align: center;
+}
+button,
+span {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+button:hover {
+  background: hsl(var(--clr-glass-light));
 }
 .contact .input-msg {
   padding-bottom: 4rem;
@@ -27,6 +74,12 @@
   text-decoration: none;
   text-transform: uppercase;
   margin-block: 1rem;
+}
+.error-message {
+  color: red;
+}
+.success-message {
+  color: black;
 }
 @media (max-width: 850px) {
   .contact input {

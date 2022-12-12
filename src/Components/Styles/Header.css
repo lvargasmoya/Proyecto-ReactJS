@@ -5,13 +5,14 @@
   justify-content: space-between;
   position: absolute;
   padding: 0.4rem;
+  top: 0vw;
 }
-
 .logo {
-  text-transform: uppercase;
-  font-size: clamp(1rem, 3vw + 1rem, 5rem);
-  color: hsl(var(--clr-glass-dark));
-  font-weight: 900;
+  width: 10%;
+  height: 10vh;
+  background-image: url(../../assets/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .list-items {
   display: flex;
@@ -26,7 +27,7 @@
 }
 .list-items li a:hover,
 .list-items li a:focus {
-  color: var(--clr-white);
+  color: hsl(49, 100%, 50%);
 }
 .close-icon {
   display: none;

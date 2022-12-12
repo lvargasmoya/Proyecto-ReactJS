@@ -9,14 +9,17 @@ function Modal({ showModal }) {
       <div className='close-modal'>
         <Close className='cm' onClick={showModal} />
       </div>
-      <div className='cart'>
+      <div className='cart python-logo'>
         <Link to='/'>Python</Link>
       </div>
-      <div className='cart'>
+      <div className='cart angular-logo'>
         <Link to='/'>Angular</Link>
       </div>
-      <div className='cart'>
+      <div className='cart reactjs-logo'>
         <Link to='/'>ReactJS</Link>
+      </div>
+      <div className='cart frontEnd-logo'>
+        <Link to='/'>Front End</Link>
       </div>
     </div>
   );
