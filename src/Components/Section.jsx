@@ -1,17 +1,8 @@
-import { Link } from '@mui/material';
 import React, { useState } from 'react';
-import Modal from './Modal';
 import Header from './Header';
-import Quotes from './Quotes';
 import './Styles/Section.css';
 
 export default function () {
-  const [modalActive, setModalActive] = useState(false);
-
-  const showModal = () => {
-    setModalActive(!modalActive);
-  };
-
   return (
     <>
       <Header />
